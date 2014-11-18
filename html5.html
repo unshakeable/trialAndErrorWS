@@ -1,0 +1,39 @@
+//HTML 5 Native 
+//dialog - Modal windows
+//date
+//meter
+
+
+<html>
+<head>
+	<title>Modal window</title>
+	<script src='jquery-1.11.1.js'></script>
+	<script src='modalWindow.js'></script>
+</head>
+<body>
+	<dialog id="dialog">
+		<h3>Are you sure?</h3>
+		<p>You pressed a big red button. It might do something.</p>
+		<div>
+			<button id="okay">Okay, go ahead</button>
+			<button id="cancel">Cancel</button>
+		</div>
+	</dialog>
+
+	<label for="bookdate">Booking Date</label>
+	<input type="date" id="bookdate" placeholder="2014-09-08" value="2014-09-10" min="2014-09-07" max="2014-09-18">
+
+	<label for="vacations">Statutory Canadian Holidays</label>
+	<input type="date" list="vacation-days" id="vacations">
+	<datalist id="vacation-days">
+		<option label="Thanksgiving">2014-10-13</option>
+		<option label="Remembrance Day">2014-11-11</option>
+		<option label="Christmas Day">2014-12-25</option>
+		<option label="Boxing Day">2014-12-26</option>
+	</datalist>
+	Bogdanovists 1 <meter id="bogdanovists1" value="7" min="0" max="27"> </meter>
+	Bogdanovists 2 <meter id="bogdanovists2" value="7" min="0" low="2" optimum="14" high="18" max="27"> </meter>
+	Bogdanovists 3 <meter id="bogdanovists3" value="19" min="0" low="2" optimum="14" high="18" max="27">19 seats </meter>
+	<button id='showModal'>ClickMe</button>
+</body>
+</html>
